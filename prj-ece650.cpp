@@ -239,7 +239,10 @@ void * APPROX_VC2(void *input)
    cout<<"APPROX_VC2: ";
     for (unsigned int i=0; i<n; i++)
     if (visited[i])
-          cout << i << ",";
+          cout << i <<;
+      if(i + 1 != n){
+                std::cout<<',';
+            }
           
     
 //timeCalculate();
@@ -269,7 +272,12 @@ while(n_edges>0)
 std::sort( C.begin(), C.end(), std::less<int>());
     std::cout<<"APPROX-VC-1: ";
    for(unsigned int g=0; g < C.size(); g++)
-    std::cout<< C[g]<< ",";
+   {
+       std::cout<< C[g];
+         if(g + 1 != C.size()){
+                std::cout<<',';
+            }
+   }
     std::cout<<std::endl;
     return &C;
 //timeCalculate();
